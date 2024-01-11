@@ -4,9 +4,9 @@ import Hero from "@/components/hero";
 import Contact from "@/components/contact";
 import Cursor from "@/components/cursor";
 import ScrollSection from "@/components/scroller";
-import MobScroller from "@/components/mobScroller";
+import MobScroller from "@/components/MobScroller";
 import Head from "next/head";
-import Footer from "@/components/footer";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   return (

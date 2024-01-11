@@ -1,4 +1,3 @@
-import React from "react";
 import ScrollingCard from "./scrollingCard";
 
 export default function MobScroller() {
