@@ -34,19 +34,19 @@ export default function Hero() {
   return (
     <section className="h-screen flex items-center justify-center max-md:items-center max-md:justify-center ">
       <div className="hero text-7xl max-md:text-4xl font-jost uppercase text-center ">
-        <span className="font-bold">Baxa is a </span>
-        <span className="italic"> Creative Agency </span> <br />
-        <span className="font-bold">
+        <span className=" font-jost font-bold">Baxa is a </span>
+        <span className=" font-jost italic"> Creative Agency </span> <br />
+        <span className=" font-jost font-bold">
           Driven To <br /> Provide{" "}
         </span>{" "}
-        <span className="font-light italic">
+        <span className=" font-jost font-light italic">
           {" "}
           Effective <br /> Solutions{" "}
         </span>
-        <span className="font-bold">
+        <span className=" font-jost font-bold">
           for <br />{" "}
         </span>{" "}
-        <span id="words1" className="font-black"></span><span className="text-blue-300 font-jost font-bold">.</span>
+        <span id="words1" className="font-black"></span><span className=" font-jost text-blue-300 font-bold">.</span>
       </div>
     </section>
   );
