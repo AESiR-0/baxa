@@ -10,9 +10,10 @@ import Footer from "@/components/footer";
 
 export default function Home() {
   return (
-    <div className="overflow-x-hidden">
+
+    <div className="overflow-x-hidden ">
       <Head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
       <Cursor />
       <Nav />
