@@ -6,6 +6,7 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+  line-height: 1.2;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -18,10 +19,98 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background: #111012;
+  height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
+}
+::-webkit-scrollbar {
+  width: 0rem;
+}
+
+@media only screen and (max-width: 500px) {
+  .nav {
+    display: none;
+  }
+  .hamburger {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 10vh;
+  }
+  .logo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .hero {
+    max-width: 100%;
+  }
+  .hero {
+    font-size: 2.5rem;
+  }
+}
+
+*::selection {
+  background-color: whitesmoke;
+  color: black;
+}
+
+* {
+  cursor: none;
+}
+
+.cursor {
+  position: fixed;
+  border-radius: 50%;
+  top: 0;
+  justify-content: center;
+  pointer-events: none;
+  z-index: 10000;
+  mix-blend-mode: difference;
+  background: #f5f5f5;
+  height: 15px;
+  width: 15px;
+}
+
+.cursor-text {
+  font-size: larger;
+  font-weight: bold;
+}
+
+.scroll-section-outer {
+  overflow: hidden;
+}
+
+.scroll-section-inner {
+  height: 100vh;
+  width: 400vw;
+  display: flex;
+  margin-top: -5rem;
+  flex-direction: row;
+  position: relative;
+}
+
+.scroll-section {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.scroll-section h3 {
+  color: var(--primaryTextColor);
+  letter-spacing: var(--headlineMedium);
+  font-size: var(--headlineMedium);
+  text-transform: uppercase;
+}
+
+.scroller-main {
+  height: 300px;
+  width: 500px;
+}
+
+.scroller-main img {
+  object-fit: 80% 20%;
 }
