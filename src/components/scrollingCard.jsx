@@ -10,7 +10,7 @@ export default function ScrolligCard(props) {
         <div className="text-left max-md:text-center max-md:gap-3   max-md:px-10  max-md:h-fit max-md:mb-10 -mb-40 flex h-auto justify-center  flex-col gap-1">
             <p className='text-2xl max-md:hidden font-jost'>{props.number}</p> <br />
             <p className='uppercase text-4xl max-w-xl font-jost font-bold'>{props.title}</p> <br />
-            <p className='max-md:max-w-lg text-2xl max-w-sm font-jost font-semibold'>{props.text}</p>
+            <p className='max-md:max-w-md text-2xl max-w-sm font-jost font-semibold'>{props.text}</p>
         </div>
       </div>
     </>

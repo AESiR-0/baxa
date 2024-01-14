@@ -17,6 +17,9 @@ body {
   .nav {
     display: none;
   }
+  .cursor{
+    display: none;
+  }
   .hamburger {
     display: flex;
     align-items: center;
