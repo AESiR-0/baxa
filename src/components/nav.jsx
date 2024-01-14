@@ -1,9 +1,62 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import Logo from "@/../public/logo.png";
 
 export default function Nav() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const handleClick = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
+  const openNav = () => {
+    return (
+      <div className="h-fit w-fit top-40 px-20 py-10 right-5 absolute z-10 text-white bg-gray-900">
+        <div className="flex flex-col  gap-20  ">
+          <div className="px-5 py-2">
+            <Link
+              href={""}
+              onClick={(e) => {
+                e.preventDefault();
+                document
+                  .getElementById("contact")
+                  .scrollIntoView({ behavior: "smooth" });
+                handleClick();
+              }}
+              className="text-xl leading-6 "
+            >
+              Contact
+            </Link>
+          </div>
+          <div className="px-5 py-2">
+            <Link
+              href={
+                "https://www.canva.com/design/DAF5Ie3fVpM/dQYhlPJwpppjoaxUI4M3fw/view#1"
+              }
+              className="text-xl leading-6 "
+            >
+              Work
+            </Link>
+          </div>
+          <div className="px-5 py-2">
+            <Link
+              href=""
+              onClick={(e) => {
+                e.preventDefault();
+                document
+                  .getElementById("services")
+                  .scrollIntoView({ behavior: "smooth" });
+                handleClick();
+              }}
+              className="text-xl leading-6 "
+            >
+              Services
+            </Link>
+          </div>
+        </div>
+      </div>
+    );
+  };
   return (
     <>
       <div className="absolute max-md:hidden w-full">
@@ -81,9 +134,10 @@ export default function Nav() {
           alt="Bax
             a Logo"
         />
-        <button className="pr-10">
-          <svg
-            className="w-10 h-10 text-white fill-current"
+
+        <button onClick={handleClick} className="">
+          <svg 
+            className="w-10 h-fit text-white fill-current"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
           >
@@ -92,6 +146,7 @@ export default function Nav() {
             <path d="M4 18h16v-2H4v2zm0-5h16v-2H4v2zm0-7v2h16V6H4z" />
           </svg>
         </button>
+        <div>{isMenuOpen ? openNav() : null}</div>
       </div>
     </>
   );

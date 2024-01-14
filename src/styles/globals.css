@@ -17,14 +17,16 @@ body {
   .nav {
     display: none;
   }
-  .cursor{
-    display: none;
-  }
   .hamburger {
     display: flex;
     align-items: center;
     justify-content: space-around;
     height: 10vh;
+  }
+  .cursor{
+    display: none;
+    height: 0;
+    width: 0;
   }
   .logo {
     width: 100%;

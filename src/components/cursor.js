@@ -26,7 +26,7 @@ export default function Cursor() {
         })
     
   return (
-    <div className='cursor'>
+    <div className='max-md:hidden  cursor'>
       <span className="cursor-text"></span>
     </div>
   )
