@@ -62,11 +62,11 @@ export default function Nav() {
         </nav>
         <div className="hidden hamburger">
           <div className="logo -ml-16 mt-8">
-            <img
-              className="hover:cursor-pointer"
+            <Image
+              className=" hover:cursor-pointer"
               width={200}
               height={100}
-              src="https://drive.google.com/uc?export=view&id=1k0NqDSge0aEE--3GIsaRBW1wsb4ulQbN"
+              src={Logo}
               alt="Baxa Logo"
             />
           </div>
