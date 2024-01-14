@@ -3,6 +3,8 @@ import {gsap} from 'gsap'
 
 export default function Cursor() {
     useEffect(() => {
+      const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+if (!isMobile) {
         const cursor  = document.querySelector('.cursor')
         const cursorText = document.querySelector('.cursor-text') 
         const text = document.querySelectorAll('a, p, h1, h2, span, button')
@@ -23,8 +25,9 @@ export default function Cursor() {
                 gsap.to(cursor, {scale:1, })   
             })
         })
+      }
         })
-    
+      
   return (
     <div className='max-md:hidden  cursor'>
       <span className="cursor-text"></span>

@@ -23,11 +23,13 @@ body {
     justify-content: space-around;
     height: 10vh;
   }
-  .cursor{
+  .cursor .cursor-text {
     display: none;
-    height: 0;
-    width: 0;
   }
+  body{
+    pointer-events: all;
+  }
+
   .logo {
     width: 100%;
     display: flex;

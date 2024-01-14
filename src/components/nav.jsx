@@ -11,8 +11,8 @@ export default function Nav() {
 
   const openNav = () => {
     return (
-      <div className="h-fit w-fit top-40 px-20 py-10 right-5 absolute z-10 text-white bg-gray-900">
-        <div className="flex flex-col  gap-20  ">
+      <div className="h-fit w-fit top-40 justify-center items-center text-center px-5 py-10 right-5 absolute z-10 text-white bg-gray-900">
+        <div className="flex flex-col  gap-10  ">
           <div className="px-5 py-2">
             <Link
               href={""}
