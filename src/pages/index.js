@@ -7,11 +7,10 @@ import ScrollSection from "@/components/scroller";
 import MobScroller from "@/components/MobScroller";
 import Head from "next/head";
 import Footer from "@/components/Footer";
-
 export default function Home() {
   return (
 
-    <div className="overflow-x-hidden ">
+    <div  className="overflow-x-hidden">
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>

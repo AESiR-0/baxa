@@ -7,7 +7,7 @@ module.exports = {
   ],
   theme: {
     fontFamily: {
-      jost : ['Jost'],
+      jost : '"Jost", sans-serif',
       Almarai : ['almarai'],
     },
     extend: {
