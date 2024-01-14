@@ -2,6 +2,7 @@ import React, { useRef, useEffect } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import ScrollingCard from "./scrollingCard";
+import Link from "next/link";
 
 function ScrollSection() {
   const sectionRef = useRef(null);
@@ -84,11 +85,13 @@ function ScrollSection() {
               text="We excel in offline activations, which helps build a personal connection with the audience beyond screens, and creating an impactful experience for the crowd."
             />
           </div>
-          <div className="flex flex-col gap-10 text-2xl font-jost font-bold justify-center h-screen w-screen items-center ">
+          <div  className="flex flex-col gap-10 text-2xl font-jost font-bold justify-center h-screen w-screen items-center ">
+            <Link href={"https://www.canva.com/design/DAF5Ie3fVpM/dQYhlPJwpppjoaxUI4M3fw/view#1"}>
             <svg className="h-20 rounded-[50%] font-jost text-lg bg-white text-black w-20 " xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
               <path d="M5 12h14"></path>
               <path d="M12 5l7 7-7 7"></path>
             </svg>
+            </Link>
             <span> Our work </span>
           </div>
         </div>
