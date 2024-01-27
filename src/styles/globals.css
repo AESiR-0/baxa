@@ -30,11 +30,6 @@ body {
     pointer-events: all;
   }
 
-  .logo {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-  }
   .hero {
     max-width: 100%;
   }

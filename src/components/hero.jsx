@@ -32,7 +32,7 @@ export default function Hero() {
   }, []);
 
   return (
-    <section className="h-screen flex items-center justify-center max-md:items-center max-md:justify-center ">
+    <section  className="h-screen flex items-center justify-center max-md:items-center max-md:justify-center ">
       <div className="hero text-7xl max-md:text-4xl font-jost uppercase text-center ">
         <span className=" font-jost font-bold">Baxa is a </span>
         <span className=" font-jost italic"> Creative Agency </span> <br />

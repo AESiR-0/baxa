@@ -13,7 +13,7 @@ export default function Home() {
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title> Home </title>
-        <link rel="icon" type="image/x-icon" href="/baxa logo.png" />
+        <link rel="icon" type="image/x-icon" sizes="512x512" href="/baxa logo.png" />
         <meta
           name="description"
           content="BAXA IS A CREATIVE AGENCY DRIVEN TO PROVIDE EFFECTIVE SOLUTIONS FOR WEB DEVELOPMENT. EVENT CURATION & MANAGEMENT. CONTENT CREATION. PHOTOGRAPHY & VIDEOGRAPHY. OFFLINE ACTIVATIONS. IP CREATION.
